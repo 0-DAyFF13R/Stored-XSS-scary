@@ -8,24 +8,24 @@ a, li, h1, h2, h3, h4, h5, h6, p {
 
 @keyframes changeColor {
     to {
-        background: #ff0000;
+        background: #ff0000 !important;
     }
 }
 
 @keyframes blinkText {
     from {
-        color: #000000;
+        color: #000000 !important;
     }
     to {
-        color: #ffffff;
+        color: #ffffff !important;
     }
 }
 
 @keyframes jerkyText {
     from {
-        font-size: 12px;
+        font-size: 12px !important;
     }
     to {
-        font-size: 13px;
+        font-size: 13px !important;
     }
 }
