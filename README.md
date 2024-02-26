@@ -3,7 +3,11 @@
 Код сработает только при наличии уязвимости хранимый XSS + если сайт не будет блокировать загрузку внешних скриптов и стилей. <br>
 Для теста можно запустить лабараторку в https://portswigger.net/web-security/cross-site-scripting/stored/lab-html-context-nothing-encoded.
 
-https://github.com/0-DAyFF13R/Stored-XSS-scary/assets/63510648/918e3044-14b0-45c1-aa3c-c795c30caf6f
+
+
+https://github.com/0-DAyFF13R/Stored-XSS-scary/assets/63510648/bb422629-d35f-476e-841e-461b51f6bd0e
+
+
 
 ------------------------------------------
 
