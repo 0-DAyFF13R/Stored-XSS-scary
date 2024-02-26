@@ -8,7 +8,7 @@ a, li, h1, h2, h3, h4, h5, h6, p, label {
 }
 
 img {
-    width: 400px;
+    width: 250px;
     animation: jerkyImg 0.09s infinite alternate;
 }
 
@@ -33,14 +33,5 @@ img {
     }
     to {
         font-size: 14px;
-    }
-}
-
-@keyframes jerkyImg {
-    from {
-        height: 100px;
-    }
-    to {
-        height: 130px;
     }
 }
