@@ -1,6 +1,5 @@
 body, section, div {
     animation: changeColor 25s forwards !important;
-    filter: grayscale(5%) contrast(150%) brightness(90%) sepia(25%);
 }
 
 a, li, h1, h2, h3, h4, h5, h6, p, label {
