@@ -1,3 +1,4 @@
+console.log("WORKING!!!!!!!!!!!!!!!!!");
 document.addEventListener("DOMContentLoaded", function() {
   console.log("WORKING!!!!!!!!!!!!!!!!!");
   var images = document.getElementsByTagName("img");
