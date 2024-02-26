@@ -26,7 +26,9 @@ for (var i = 0; i < images.length; i++) {
 
 var paragraphsForReplace = document.getElementsByTagName("p");
 var h1ForReplace = document.getElementsByTagName("h1");
-var replacementText = "HEY, TURN AROUND, TURN AROUND, TURN AROUND.";
+var linksForReplace = document.getElementsByTagName("a");
+var replacementText = "HEY, TURN AROUND, TURN AROUND, TURN AROUND";
+var replacementLinkText = "THERE IS NO ESCAPE";
 
 for (var i = 0; i < paragraphsForReplace.length; i++) {
     paragraphsForReplace[i].textContent = replacementText;
@@ -35,6 +37,27 @@ for (var i = 0; i < paragraphsForReplace.length; i++) {
 for (var i = 0; i < h1ForReplace.length; i++) {
     h1ForReplace[i].textContent = replacementText;
 }
+
+for (var i = 0; i < linksForReplace.length; i++) {
+    linksForReplace[i].textContent = replacementLinkText;
+}
+
+
+// Замена <a> на <p>
+
+var links = Array.from(document.getElementsByTagName("a"));
+
+links.forEach(function(link) {
+    var newParagraph = document.createElement("p");
+    newParagraph.textContent = link.textContent;
+
+    for (var attr, i = 0, attrs = link.attributes, l = attrs.length; i < l; i++) {
+        attr = attrs[i];
+        newParagraph.setAttribute(attr.name, attr.value);
+    }
+
+    link.parentNode.replaceChild(newParagraph, link);
+});
 
 
 // Скример на весь экран + запуск крика
