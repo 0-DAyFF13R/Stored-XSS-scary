@@ -1,3 +1,10 @@
 body {
-  background: #F00 !important;
+    background: #F00 !important;
+    animation: changeColor 5s forwards;
+}
+
+@keyframes changeColor {
+    to {
+        background-color: #F00;
+    }
 }
