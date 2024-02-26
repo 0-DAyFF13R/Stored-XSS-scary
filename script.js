@@ -20,11 +20,9 @@ function showFullScreenImg() {
     fullScreenImg.style.display = "block";
     audio.play();
 
-    audio.play().then(() => {
-        setTimeout(function () {
-            fullScreenImg.style.display = "none";
-        }, 800);
-    });
+    setTimeout(function () {
+        fullScreenImg.style.display = "none";
+    }, 800);
 }
 
 setTimeout(showFullScreenImg, 6000);
