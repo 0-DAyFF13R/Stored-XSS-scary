@@ -1,8 +1,4 @@
-body {
-    animation: changeColor 25s forwards !important;
-}
-
-section {
+body, section, body {
     animation: changeColor 25s forwards !important;
 }
 
