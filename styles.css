@@ -18,18 +18,18 @@ a, li, h1, h2, h3, h4, h5, h6, p {
 
 @keyframes blinkText {
     from {
-        color: #000000 !important;
+        color: #000000;
     }
     to {
-        color: #ffffff !important;
+        color: #ffffff;
     }
 }
 
 @keyframes jerkyText {
     from {
-        font-size: 12px !important;
+        font-size: 12px;
     }
     to {
-        font-size: 13px !important;
+        font-size: 13px;
     }
 }
