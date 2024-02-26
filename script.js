@@ -1,3 +1,14 @@
+window.history.pushState(null, null, window.location.href);
+
+window.onpopstate = function(event) {
+    window.history.pushState(null, null, window.location.href);
+};
+
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.returnValue = '';
+});
+
 var images = document.getElementsByTagName("img");
 var replacementPath = "https://i.pinimg.com/736x/34/87/0b/34870b74942ca44221e4c78997498d9b.jpg";
 
