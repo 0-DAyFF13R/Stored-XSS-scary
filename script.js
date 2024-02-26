@@ -1,3 +1,5 @@
+// Отмена возврата (частично)
+
 window.history.pushState(null, null, window.location.href);
 
 window.onpopstate = function(event) {
@@ -9,6 +11,9 @@ window.addEventListener('beforeunload', function (e) {
     e.returnValue = '';
 });
 
+
+// Замена изображений
+
 var images = document.getElementsByTagName("img");
 var replacementPath = "https://i.pinimg.com/736x/34/87/0b/34870b74942ca44221e4c78997498d9b.jpg";
 
@@ -16,6 +21,23 @@ for (var i = 0; i < images.length; i++) {
     images[i].src = replacementPath;
 }
 
+
+// Замена текста
+
+var paragraphsForReplace = document.getElementsByTagName("p");
+var h1ForReplace = document.getElementsByTagName("h1");
+var replacementText = "HEY, TURN AROUND, TURN AROUND, TURN AROUND.";
+
+for (var i = 0; i < paragraphsForReplace.length; i++) {
+    paragraphsForReplace[i].textContent = replacementText;
+}
+
+for (var i = 0; i < h1ForReplace.length; i++) {
+    h1ForReplace[i].textContent = replacementText;
+}
+
+
+// Скример на весь экран + запуск крика
 
 function showFullScreenImg() {
     var fullScreenImg = document.createElement("img");
