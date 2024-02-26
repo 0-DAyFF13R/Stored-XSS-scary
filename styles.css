@@ -1,9 +1,15 @@
 body, section, body {
     animation: changeColor 25s forwards !important;
+    filter: grayscale(100%) contrast(150%) brightness(80%) sepia(30%);
 }
 
 a, li, h1, h2, h3, h4, h5, h6, p, label {
     animation: blinkText 0.15s infinite alternate, jerkyText 0.6s infinite;
+}
+
+img {
+    width: 400px;
+    animation: jerkyImg 0.15s infinite alternate;
 }
 
 @keyframes changeColor {
@@ -27,5 +33,14 @@ a, li, h1, h2, h3, h4, h5, h6, p, label {
     }
     to {
         font-size: 14px;
+    }
+}
+
+@keyframes jerkyImg {
+    from {
+        height: 100px;
+    }
+    to {
+        height: 130px;
     }
 }
