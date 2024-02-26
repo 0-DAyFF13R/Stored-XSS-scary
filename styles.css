@@ -1,5 +1,13 @@
-body, section, div {
-    animation: changeColor 25s forwards !important;
+body {
+    animation: changeColorForBody 10s forwards !important;
+}
+
+section {
+    animation: changeColorForSection 15s forwards !important;
+}
+
+div {
+    animation: changeColorForDiv 15s forwards !important;
 }
 
 a, li, h1, h2, h3, h4, h5, h6, p, label {
@@ -11,9 +19,21 @@ img {
     animation: jerkyImg 0.09s infinite alternate;
 }
 
-@keyframes changeColor {
+@keyframes changeColorForBody {
     to {
         background: #c20000;
+    }
+}
+
+@keyframes changeColorForSection {
+    to {
+        background: #690000;
+    }
+}
+
+@keyframes changeColorForDiv {
+    to {
+        background: #200000;
     }
 }
 
@@ -32,5 +52,15 @@ img {
     }
     to {
         font-size: 14px;
+    }
+}
+
+@keyframes jerkyImg {
+    from {
+        width: 250px;
+    }
+    to {
+        width: 252px;
+        filter: grayscale(150%) contrast(150%) brightness(5%) sepia(25%);
     }
 }
