@@ -1,4 +1,4 @@
-alert('Ha-ha! Just a hack by Daffier');
+alert('H4CK3D BY DAFFIER');
 
 // Отмена возврата (частично)
 
