@@ -14,6 +14,8 @@ https://github.com/0-DAyFF13R/Stored-XSS-scary/assets/63510648/bb422629-d35f-476
 * Замена всех тегов "a" на "p".
 * Скример на весь экран с криком в течение какого-то времени.
 
+⚠️ Important: This payload is for educational purposes only and for testing on your own or training systems. Use in real attacks violates laws and ethical standards. The author of the repository is not responsible for the use of this payload by third parties.
+
 ------------------------------------------
 
 Полная версия (JS + CSS):
